@@ -11,13 +11,33 @@
 <div class="container">
     <article class="row chairman">
         <div class="col-md-7">
-            <h1><i class="fa fa-angle-double-down"></i> For a Better Mongolia</h1>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                </p>
-                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
+            <h1><i class="fa fa-angle-double-down"></i> Монгол хүний төлөө</h1>
+            @if($tweets)
+            <ul id="slideshow">
+                @foreach($tweets as $index => $tweet)
+                    @if($index == 0)
+                    <li class="next">
+                        <blockquote>
+                            <p>{{ $tweet->status }}
+                            </p>
+                            <footer>{{ $tweet->title }}</footer>
+                        </blockquote>
+                    </li>
+                    @else
+                    <li>
+                        <blockquote>
+                            <p>{{ $tweet->status }}
+                            </p>
+                            <footer>{{ $tweet->title }}</footer>
+                        </blockquote>
+                    </li>
+                    @endif()
+
+                @endforeach()
+            </ul>
+
+            @endif()
+
         </div>
         <div class="col-md-4 col-md-offset-1">
             <img src="images/ganbaatar.png">

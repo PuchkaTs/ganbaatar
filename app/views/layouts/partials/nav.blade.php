@@ -1,6 +1,6 @@
 <div class="quick-access">
     <div class="container">
-        <p class="pull-left">Онцлох:</p>
+        <p class="pull-left">Онцлох: Ганбаатар гишүүн Дарханд ажиллаж байна.</p>
         <p class="pull-right"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-soundcloud"></i></a></p>
     </div>
 </div>

@@ -57,7 +57,8 @@ return array(
         'banners',
         'contents',
         'Мэдээлэл'=>['projects', 'images', 'tags'],
-        'career'
+        'career',
+        'gtweets',
     ),
 
 	/**

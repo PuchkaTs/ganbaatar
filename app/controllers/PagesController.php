@@ -25,13 +25,14 @@ class PagesController extends \BaseController {
         $banners = $this->banners;
         $body = 'body goes here';
         $header = 'Header goes here';
+        $tweets = Gtweet::get();
 //        if ($content = Content::whereTag('About us')->first())
 //        {
 //                $body = $content->body;
 //                $header = $content->header;
 //        }
 
-        return View::make('pages.home')->with(compact('body', 'header', 'banners'));
+        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets'));
     }
 
     /**

@@ -32,6 +32,12 @@ class ContactsController extends Controller {
 	 */
 	public function create()
 	{
+
+		return View::make('pages.ask');
+	}
+
+    public function contact()
+    {
         $config['center'] = '47.920447, 106.917053';
         $config['zoom'] = '14';
         $config['scrollwheel'] = false;
@@ -42,8 +48,8 @@ class ContactsController extends Controller {
         Gmaps::add_marker($marker);
         $map = Gmaps::create_map();
 //        echo "<html><head>".$map['js']."</head><body>".$map['html']."</body></html>";
-		return View::make('pages.contact_us')->withMap($map);
-	}
+        return View::make('pages.contact_us')->withMap($map);
+    }
 
 	/**
 	 * Store a newly created resource in storage.

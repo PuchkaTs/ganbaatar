@@ -2,7 +2,6 @@
 @section('content')
 
     {{ $map['html'] }}
-@include('layouts.partials.contactForm')
 @stop
 
 @section('script')

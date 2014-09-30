@@ -3,7 +3,7 @@
          data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
         <div class="col-md-6 col-md-offset-3  uk-scrollspy-inview"
              data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
-            <h1 class="underlined" style="text-align: center;">Бидэнтэй холбоо барих</h1>
+            <h1 class="underlined" style="text-align: center;">Ганбаатараас асуух</h1>
             @include('layouts.partials.errors')
             {{ Form::open(['route' => 'contact_path'])}}
             <!-- Name form input -->

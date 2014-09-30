@@ -21,13 +21,10 @@ Route::get('policy/{id}', [
     'uses' => 'PagesController@policy'
 ]);
 
-Route::post('/contact_us', [
-    'as'   => 'contact_path',
-    'uses' => 'ContactsController@store'
-]);
+
 Route::get('/contact_us', [
     'as'   => 'contact_path',
-    'uses' => 'ContactsController@create'
+    'uses' => 'ContactsController@contact'
 ]);
 
 Route::get('/news', [
@@ -42,6 +39,14 @@ Route::get('/news/{id}', [
 Route::get('/career', [
     'as'   => 'career_path',
     'uses' => 'PagesController@career'
+]);
+Route::get('/ask', [
+    'as'   => 'career_path',
+    'uses' => 'ContactsController@create'
+]);
+Route::post('/ask', [
+    'as'   => 'contact_path',
+    'uses' => 'ContactsController@store'
 ]);
 /**
  * Sessions

@@ -83,39 +83,67 @@
 <div class="container">
     <article class="row" style="height: 300px; background-color: #ffffff; padding-left: 30px; margin-bottom: 30px; margin-top: 45px">
         <h3><i class="fa fa-music"></i> MP3 lekc</h3>
-        <div class="col-md-6">
+        <div class="col-md-12" style="height: 220px; overflow: auto;">
             <table class="table table-hover">
                 <thead>
                 <tr>
                     <th>#</th>
                     <th>Нэр</th>
                     <th>Татах</th>
+                    <th>Тоголуулагч</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Лекц 1</td>
-                    <td><i class="fa fa-cloud-download"></i> &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i></td>
+                    <td>Амьдралын туйлын зорилго </td>
+                    <td><a href="uploads/lekc/1.mp3" download><i class="fa fa-cloud-download"></i></a>
+                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
+                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Лекц 2</td>
-                    <td><i class="fa fa-cloud-download"></i></td>
+                    <td>Хүсэл мөрөөдөл</td>
+                    <td><a href="uploads/lekc/2.mp3" download><i class="fa fa-cloud-download"></i></a>
+
+                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
+                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
+
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Лекц 3</td>
-                    <td><i class="fa fa-cloud-download"></i></td>
+                    <td>Амьдрал гэж юу вэ?</td>
+                    <td><a href="uploads/lekc/3.mp3" download><i class="fa fa-cloud-download"></i></a>
+
+                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
+                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Зуршил гэж юу вэ?</td>
+                    <td><a href="uploads/lekc/4.mp3" download><i class="fa fa-cloud-download"></i></a>
+
+                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
+                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Мэргэжлээ хэрхэн зөв сонгох вэ?</td>
+                    <td><a href="uploads/lekc/5.mp3" download><i class="fa fa-cloud-download"></i></a>
+
+                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
+                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Аз жаргалыг босго</td>
+                    <td><a href="uploads/lekc/6.mp3" download><i class="fa fa-cloud-download"></i></a>
+
+                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
+                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
                 </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="col-md-6" style="text-align: center">
-            <iframe style="border:none" src="http://files.podsnack.com/iframe/embed.html?hash=a1u8vasf&t=1411921410"
-                    width="525" height="244" allowfullscreen="true" mozallowfullscreen="true"
-                    webkitallowfullscreen="true"></iframe>
-
         </div>
     </article>
 </div>

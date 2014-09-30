@@ -37,7 +37,7 @@
                     <li class="dropdown {{ Request::is('contact/*') ? 'active' : '' }}" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Холбогдох <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li ><a href="/services/design_service">Ганбаатраас асуух</a></li>
+                            <li ><a href="/services/design_service">Ганбаатараас асуух</a></li>
                             <li><a href="/contact_us">Холбогдох</a></li>
                         </ul>
                     </li>

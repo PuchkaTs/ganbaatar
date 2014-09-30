@@ -45,11 +45,13 @@
     </article>
 
     <article class="row" style=" background-color: #F1F4F9">
-        @for ($i = 0; $i < 3; $i++)
+
         <div class="col-sm-6 col-md-4 noPadding">
-            <div class="thumbnail thumb{{$i}}">
-                <h3>Text goes here</h3>
-                <img src="images/16.jpg" alt="...">
+            <div class="thumbnail thumb0">
+                <h3>Оюу Толгойн луйвар</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/NtqKFN2ZFKw"></iframe>
+                </div>
 
                 <div class="caption">
 
@@ -59,7 +61,38 @@
                 </div>
             </div>
         </div>
-        @endfor
+
+        <div class="col-sm-6 col-md-4 noPadding">
+            <div class="thumbnail thumb1">
+                <h3>Боол намайг өршөө</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/2rZmyt4CpVY"></iframe>
+                </div>
+
+                <div class="caption">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+                    <p><a href="#" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 noPadding">
+            <div class="thumbnail thumb2">
+                <h3>100 асуулт 100 хариулт </h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Pod8iYd4pFE"></iframe>
+                </div>
+
+                <div class="caption">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+                    <p><a href="#" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
+                </div>
+            </div>
+        </div>
 
     </article>
 </div>

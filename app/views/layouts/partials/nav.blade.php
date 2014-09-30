@@ -17,8 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand animated fadeInDown hidden-xs" href="/">{{ HTML::image("logo.png") }}</a>
-                <a class="navbar-brand animated fadeInDown visible-xs" href="/">{{ HTML::image("logo.png") }}</a>
+                <a class="navbar-brand animated fadeInDown hidden-xs hidden-sm" href="/">{{ HTML::image("logo.png") }}</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,8 +32,8 @@
                         </ul>
                     </li>
                     <li class="{{ Request::is('news') ? 'active' : '' }}"><a href="/news">Мэдээлэл</a></li>
-                    <li class="{{ Request::is('video') ? 'active' : '' }}"><a href="/video">Видео</a></li>
-                    <li class="{{ Request::is('career') ? 'active' : '' }}"><a href="/career">CV</a></li>
+                    <li class="{{ Request::is('video') ? 'active' : '' }}"><a href="/video">Бичлэг</a></li>
+                    <li class="{{ Request::is('career') ? 'active' : '' }}"><a href="/career">Танилцуулга</a></li>
                     <li class="dropdown {{ Request::is('contact/*') ? 'active' : '' }}" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Холбогдох <b class="caret"></b></a>
                         <ul class="dropdown-menu">

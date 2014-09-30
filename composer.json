@@ -12,7 +12,7 @@
         "barryvdh/laravel-elfinder": "0.1.x",
         "laravel/cashier": "1.0",
         "tinymce/tinymce": "4.1.2",
-        "frozennode/administrator": "dev-master",
+        "frozennode/administrator": "4.11.2",
         "guzzle/guzzle": "dev-master",
         "thujohn/twitter": "dev-master",
         "facebook/php-sdk": "dev-master",

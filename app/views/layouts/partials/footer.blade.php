@@ -6,32 +6,33 @@
         <!--        <p class="center">{{ App::getLocale() == 'en' ? HTML::image("logo_lg_en.png") : HTML::image("logo_lg_mn.png")}}</p>-->
 
         <div class="col-md-3 col-md-offset-2">
-            <h4><span class="glyphicon glyphicon-map-marker"></span> Ulaanbaatar, Mongolia.</h4>
+            <h4><span class="glyphicon glyphicon-map-marker"></span> Улаанбаатар, Монгол улс.</h4>
 
-            <p> streed address </p>
+            <p> Сүхбаатар дүүрэг </p>
 
-            <p> streed address </p>
+            <p> Чингисийн талбай-1 </p>
 
-            <p> streed address </p>
+            <p> Төрийн ордон 411 тоот </p>
         </div>
 
         <div class="col-md-3">
-            <h4><span class="glyphicon glyphicon-earphone"></span> Want to talk?</h4>
+            <h4><span class="glyphicon glyphicon-earphone"></span> Холбоо барих.</h4>
 
-            <p> mobile: +976-9518-1863 </p>
+            <p> Утас: +51-260-360 </p>
 
-            <p> mobile: +976-9518-1863 </p>
+            <p> Гар утас: +976-9908-4494 </p>
 
-            <p> mobile: +976-9518-1863 </p>
+            <p> Факс: 32-70-16 </p>
+
         </div>
 
         <div class="col-md-3">
-            <h4><span class="glyphicon glyphicon-envelope"></span> Stay connected.</h4>
+            <h4><span class="glyphicon glyphicon-envelope"></span> Захидал илгээх.</h4>
 
-            <p class="street-address">@Marketing</p>
+            <p class="street-address">@Ganbaatar Team</p>
 
-            <p> email: <a href="mailto:hello@ikreativ.com">hello@ganbaatar.mn</a>
-                <br>email: <a href="mailto:hello@ikreativ.com">hello@ganbaatar.mn</a>
+            <p> email: <a href="mailto:info@ganbaatar.mn">info@ganbaatar.mn</a>
+<!--            <br>email: <a href="mailto:hello@ganbaatar.mn">@ganbaatar.mn</a>-->
             </p>
         </div>
 

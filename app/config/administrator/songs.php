@@ -4,46 +4,44 @@
  *
  * @type string
  */
-
     return array(
-        'title'       => 'Бодлого',
-        'single'      => 'Бодлого',
-        'model'       => 'Content',
+        'title'       => 'Лекц',
+        'single'      => 'Лекц',
+        'model'       => 'Song',
 
         /**
          * The display columns
          */
         'columns'     => array(
             'id',
-            'header'     => array(
+            'title'     => array(
                 'title' => 'Гарчиг',
-            ),
-            'menuTitle'     => array(
-                'title' => 'Цэсны нэр',
-            ),
-
+            )
         ),
 
         /**
          * The editable fields
          */
         'edit_fields' => array(
-            'menuTitle'  => array(
+            'title'  => array(
                 'title' => 'Цэсны нэр',
                 'type'  => 'text',
             ),
-            'header'     => array(
-                'title' => 'Гарчиг',
-                'type'  => 'text',
+            'song' => array(
+                'title' => 'File',
+                'type' => 'file',
+                'location' => storage_path() . '/lekc',
+                'naming' => 'random',
+                'length' => 20,
+                'size_limit' => 4,
+                'mimes' => 'mp3',
             ),
-            'body' => array(
+            'pdf' => array(
                 'title' => 'Агуулага',
-                'type'  => 'wysiwyg',
+                'type'  => 'text',
             ),
 
         ),
-
-        'form_width'  => 500,
 
     );
 

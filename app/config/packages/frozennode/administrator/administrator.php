@@ -59,6 +59,7 @@ return array(
         'Мэдээлэл'=>['projects', 'images', 'tags'],
         'career',
         'gtweets',
+        'songs',
     ),
 
 	/**

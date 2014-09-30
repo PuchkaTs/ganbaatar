@@ -1,8 +1,8 @@
 <?php
 
 
-class Content extends Eloquent {
+class Song extends Eloquent {
 
-    protected $fillable = ['body', 'header', 'menuTitle'];
+    protected $fillable = ['title', 'song', 'pdf'];
 
 }

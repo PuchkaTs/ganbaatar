@@ -30,7 +30,7 @@
             'song' => array(
                 'title' => 'File',
                 'type' => 'file',
-                'location' => storage_path() . '/lekc',
+                'location' => public_path() . '/uploads/lekc',
                 'naming' => 'random',
                 'length' => 20,
                 'size_limit' => 4,

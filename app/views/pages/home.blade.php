@@ -3,6 +3,7 @@
 @section('css')
 
 <link rel="stylesheet" type="text/css" href="css/hover_css/component.css"/>
+<script type="text/javascript" src="//cdn.sublimevideo.net/js/l38se7cr.js"></script>
 @stop
 
 @section('content')
@@ -49,9 +50,8 @@
         <div class="col-sm-6 col-md-4 noPadding">
             <div class="thumbnail thumb0">
                 <h3>Оюу Толгойн луйвар</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/NtqKFN2ZFKw"></iframe>
-                </div>
+                <video id="NtqKFN2ZFKw" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="NtqKFN2ZFKw" data-youtube-id="NtqKFN2ZFKw" data-autoresize="fit" preload="none">
+                </video>
 
                 <div class="caption">
 
@@ -65,9 +65,8 @@
         <div class="col-sm-6 col-md-4 noPadding">
             <div class="thumbnail thumb1">
                 <h3>Боол намайг өршөө</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/2rZmyt4CpVY"></iframe>
-                </div>
+                <video id="2rZmyt4CpVY" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="2rZmyt4CpVY" data-youtube-id="2rZmyt4CpVY" data-autoresize="fit" preload="none">
+                </video>
 
                 <div class="caption">
 
@@ -81,9 +80,8 @@
         <div class="col-sm-6 col-md-4 noPadding">
             <div class="thumbnail thumb2">
                 <h3>100 асуулт 100 хариулт </h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Pod8iYd4pFE"></iframe>
-                </div>
+                <video id="Pod8iYd4pFE" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="Pod8iYd4pFE" data-youtube-id="Pod8iYd4pFE" data-autoresize="fit" preload="none">
+                </video>
 
                 <div class="caption">
 

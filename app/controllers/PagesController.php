@@ -26,13 +26,28 @@ class PagesController extends \BaseController {
         $body = 'body goes here';
         $header = 'Header goes here';
         $tweets = Gtweet::get();
+        $videos = Video::wherePin(true)->get();
 //        if ($content = Content::whereTag('About us')->first())
 //        {
 //                $body = $content->body;
 //                $header = $content->header;
 //        }
 
-        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets'));
+        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets', 'videos'));
+    }
+
+    public function video()
+    {
+        $banners = $this->banners;
+        $videos = Video::get();
+
+        return View::make('pages.video')->with(compact('banners', 'videos'));
+    }
+    public function videoById($id)
+    {
+        $banners = $this->banners;
+        $video = Video::find($id);
+        return View::make('pages.videoById')->with(compact('banners', 'video'));
     }
 
     /**

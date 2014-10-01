@@ -5,8 +5,8 @@
  * @type string
  */
  return array(
-        'title'       => 'Tweet',
-        'single'      => 'Tweet',
+        'title'       => 'Твит',
+        'single'      => 'Твит',
         'model'       => 'Gtweet',
         /**
          * The display columns
@@ -14,10 +14,10 @@
         'columns'     => array(
             'id',
             'title'     => array(
-                'title' => 'Title',
+                'title' => 'Гарчиг',
             ),
             'status'     => array(
-                'title' => 'Tweet',
+                'title' => 'Твит',
             ),
         ),
 
@@ -26,11 +26,11 @@
          */
         'edit_fields' => array(
             'title'  => array(
-                'title' => 'Title',
+                'title' => 'Нэр',
                 'type'  => 'text',
             ),
             'status'  => array(
-                'title' => 'Tweet',
+                'title' => 'Твит',
                 'type'  => 'wysiwyg',
             ),
 

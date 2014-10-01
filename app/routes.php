@@ -21,6 +21,15 @@ Route::get('policy/{id}', [
     'uses' => 'PagesController@policy'
 ]);
 
+Route::get('video', [
+    'as'   => 'video_path',
+    'uses' => 'PagesController@video'
+]);
+
+Route::get('video/{id}', [
+    'as'   => 'video_path',
+    'uses' => 'PagesController@videoById'
+]);
 
 Route::get('/contact_us', [
     'as'   => 'contact_path',

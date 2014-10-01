@@ -46,74 +46,35 @@
     </article>
 
     <article class="row" style=" background-color: #F1F4F9">
+        @foreach($videos as $index => $video)
+            <div class="col-sm-6 col-md-4 noPadding">
+                <div class="thumbnail thumb{{ $index }}">
+                    <h3>{{ $video->title }}</h3>
+                    <video id="{{ $video->video }}" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="{{ $video->video }}" data-youtube-id="{{ $video->video }}" data-autoresize="fit" preload="none">
+                    </video>
 
-        <div class="col-sm-6 col-md-4 noPadding">
-            <div class="thumbnail thumb0">
-                <h3>Оюу Толгойн луйвар</h3>
-                <video id="NtqKFN2ZFKw" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="NtqKFN2ZFKw" data-youtube-id="NtqKFN2ZFKw" data-autoresize="fit" preload="none">
-                </video>
+                    <div class="caption">
 
-                <div class="caption">
+                        <p>{{ $video->shorten(100) }}</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-                    <p><a href="#" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
+                        <p><a href="video/{{$video->id}}" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 noPadding">
-            <div class="thumbnail thumb1">
-                <h3>Боол намайг өршөө</h3>
-                <video id="2rZmyt4CpVY" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="2rZmyt4CpVY" data-youtube-id="2rZmyt4CpVY" data-autoresize="fit" preload="none">
-                </video>
-
-                <div class="caption">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-                    <p><a href="#" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 noPadding">
-            <div class="thumbnail thumb2">
-                <h3>100 асуулт 100 хариулт </h3>
-                <video id="Pod8iYd4pFE" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="Pod8iYd4pFE" data-youtube-id="Pod8iYd4pFE" data-autoresize="fit" preload="none">
-                </video>
-
-                <div class="caption">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-                    <p><a href="#" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
-                </div>
-            </div>
-        </div>
+        @endforeach()
 
     </article>
 </div>
 
-<div class="container-fluid">
+<div class="container">
     <div class="grid">
-        @for ($i = 0; $i < 10; $i++)
-        <figure class="effect-zoe">
-            <img src="images/17.jpg" alt="img11"/>
-            <figcaption>
-                <h2>Faithful <span>Milo</span></h2>
-                <!--                <p>Milo went to the woods. He took a fun ride and never came back.</p>-->
-                <a href="#">View more</a>
-            </figcaption>
-        </figure>
-        @endfor
 
 
     </div>
 </div>
 <div class="container">
     <article class="row" style="height: 300px; background-color: #ffffff; padding-left: 30px; margin-bottom: 30px; margin-top: 45px">
-        <h3><i class="fa fa-music"></i> MP3 lekc</h3>
+        <h3><i class="fa fa-music"></i> Аудио лекц сонсох</h3>
         <div class="col-md-12" style="height: 220px; overflow: auto;">
             <table class="table table-hover">
                 <thead>
@@ -121,7 +82,6 @@
                     <th>#</th>
                     <th>Нэр</th>
                     <th>Татах</th>
-                    <th>Тоголуулагч</th>
                 </tr>
                 </thead>
                 <tbody>

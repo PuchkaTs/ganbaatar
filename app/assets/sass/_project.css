@@ -1,0 +1,37 @@
+.project {
+  height: 210px;
+  padding: 28px;
+  background-color: #fff; }
+
+.project .text {
+  margin-left: 15px;
+  height: 120px;
+  overflow: hidden; }
+
+p.subdate {
+  font-style: italic;
+  color: #aaa;
+  font-size: 11px; }
+
+.project img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 15px; }
+
+.project h3 {
+  margin-top: 0px; }
+
+#project_by_id {
+  background-color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 40px; }
+
+#project_by_id article {
+  padding: 30px; }
+
+#project_by_id article h3 {
+  margin-top: 0px; }
+
+/*# sourceMappingURL=_project.css.map */

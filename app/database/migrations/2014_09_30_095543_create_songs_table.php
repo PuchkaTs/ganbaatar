@@ -16,8 +16,9 @@ class CreateSongsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('title');
-			$table->string('song');
-			$table->string('pdf');
+			$table->string('download_link');
+			$table->string('play_link');
+			$table->integer('position');
 			$table->timestamps();
 		});
 	}

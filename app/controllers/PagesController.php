@@ -27,13 +27,14 @@ class PagesController extends \BaseController {
         $header = 'Header goes here';
         $tweets = Gtweet::get();
         $videos = Video::wherePin(true)->get();
+        $songs = Song::get();
 //        if ($content = Content::whereTag('About us')->first())
 //        {
 //                $body = $content->body;
 //                $header = $content->header;
 //        }
 
-        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets', 'videos'));
+        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets', 'videos', 'songs'));
     }
 
     public function video()

@@ -16,7 +16,10 @@
             'id',
             'title'     => array(
                 'title' => 'Гарчиг',
-            )
+            ),
+            'position' => array(
+                'title' => 'Байрлал',
+            ),
         ),
 
         /**
@@ -24,23 +27,21 @@
          */
         'edit_fields' => array(
             'title'  => array(
-                'title' => 'Цэсны нэр',
+                'title' => 'Лекцийн нэр',
                 'type'  => 'text',
             ),
-            'song' => array(
-                'title' => 'File',
-                'type' => 'file',
-                'location' => public_path() . '/uploads/lekc',
-                'naming' => 'random',
-                'length' => 20,
-                'size_limit' => 4,
-                'mimes' => 'mp3',
-            ),
-            'pdf' => array(
-                'title' => 'Агуулага',
+            'download_link' => array(
+                'title' => 'Татах холбоос',
                 'type'  => 'text',
             ),
-
+            'play_link' => array(
+                'title' => 'Тоголуулах холбоос',
+                'type'  => 'text',
+            ),
+            'position' => array(
+                'title' => 'Байрлал',
+                'type'  => 'number',
+            ),
         ),
 
     );

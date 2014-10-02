@@ -16,23 +16,23 @@
             @if($tweets)
             <ul id="slideshow">
                 @foreach($tweets as $index => $tweet)
-                    @if($index == 0)
-                    <li class="next">
-                        <blockquote>
-                            <p>{{ $tweet->status }}
-                            </p>
-                            <footer>{{ $tweet->title }}</footer>
-                        </blockquote>
-                    </li>
-                    @else
-                    <li>
-                        <blockquote>
-                            <p>{{ $tweet->status }}
-                            </p>
-                            <footer>{{ $tweet->title }}</footer>
-                        </blockquote>
-                    </li>
-                    @endif()
+                @if($index == 0)
+                <li class="next">
+                    <blockquote>
+                        <p>{{ $tweet->status }}
+                        </p>
+                        <footer>{{ $tweet->title }}</footer>
+                    </blockquote>
+                </li>
+                @else
+                <li>
+                    <blockquote>
+                        <p>{{ $tweet->status }}
+                        </p>
+                        <footer>{{ $tweet->title }}</footer>
+                    </blockquote>
+                </li>
+                @endif()
 
                 @endforeach()
             </ul>
@@ -47,20 +47,23 @@
 
     <article class="row" style=" background-color: #F1F4F9">
         @foreach($videos as $index => $video)
-            <div class="col-sm-6 col-md-4 noPadding">
-                <div class="thumbnail thumb{{ $index }}">
-                    <h3>{{ $video->title }}</h3>
-                    <video id="{{ $video->video }}" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="{{ $video->video }}" data-youtube-id="{{ $video->video }}" data-autoresize="fit" preload="none">
-                    </video>
+        <div class="col-sm-6 col-md-4 noPadding">
+            <div class="thumbnail thumb{{ $index }}">
+                <h3>{{ $video->title }}</h3>
+                <video id="{{ $video->video }}" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар"
+                       data-uid="{{ $video->video }}" data-youtube-id="{{ $video->video }}" data-autoresize="fit"
+                       preload="none">
+                </video>
 
-                    <div class="caption">
+                <div class="caption">
 
-                        <p>{{ $video->shorten(100) }}</p>
+                    <p>{{ $video->shorten(100) }}</p>
 
-                        <p><a href="video/{{$video->id}}" class="btn btn-primary btn-block btnRed" role="button">Дэлгэрэнгүй</a></p>
-                    </div>
+                    <p><a href="video/{{$video->id}}" class="btn btn-primary btn-block btnRed"
+                          role="button">Дэлгэрэнгүй</a></p>
                 </div>
             </div>
+        </div>
         @endforeach()
 
     </article>
@@ -73,86 +76,54 @@
     </div>
 </div>
 <div class="container">
-    <article class="row" style="height: 300px; background-color: #ffffff; padding-left: 30px; margin-bottom: 30px; margin-top: 45px">
+    <article class="row"
+             style=" background-color: #ffffff; padding-left: 30px; margin-bottom: 30px; margin-top: 45px">
         <h3><i class="fa fa-music"></i> Аудио лекц сонсох</h3>
-        <div class="col-md-12" style="height: 220px; overflow: auto;">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Нэр</th>
-                    <th>Татах</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Амьдралын туйлын зорилго </td>
-                    <td><a href="uploads/lekc/1.mp3" download><i class="fa fa-cloud-download"></i></a>
-                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
-                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Хүсэл мөрөөдөл</td>
-                    <td><a href="uploads/lekc/2.mp3" download><i class="fa fa-cloud-download"></i></a>
 
-                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
-                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
+        <div class="col-md-12" style="margin-bottom: 30px;">
+            <ul class="nav nav-tabs" role="tablist" id="myTab">
+                <li class="active"><a href="#home" role="tab" data-toggle="tab">Лекцүүд</a></li>
+                <li><a href="#download" role="tab" data-toggle="tab">Татах</a></li>
+            </ul>
 
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Амьдрал гэж юу вэ?</td>
-                    <td><a href="uploads/lekc/3.mp3" download><i class="fa fa-cloud-download"></i></a>
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/53338125&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                </div>
+                <div class="tab-pane" id="download">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Нэр</th>
+                            <th>Татах</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($songs as $index => $song)
+                                <tr>
+                                    <td>{{$index}}</td>
+                                    <td>{{$song->title}}</td>
+                                    <td><a href="{{$song->download_link}}" download><i class="fa fa-cloud-download"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a href="{{$song->play_link}}" target="_blank"><i class="fa fa-play-circle-o"></i></a></td>
+                                </tr>
+                            @endforeach()
+                        </tbody>
+                    </table>
 
-                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
-                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Зуршил гэж юу вэ?</td>
-                    <td><a href="uploads/lekc/4.mp3" download><i class="fa fa-cloud-download"></i></a>
+                </div>
+            </div>
 
-                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
-                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Мэргэжлээ хэрхэн зөв сонгох вэ?</td>
-                    <td><a href="uploads/lekc/5.mp3" download><i class="fa fa-cloud-download"></i></a>
 
-                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
-                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Аз жаргалыг босго</td>
-                    <td><a href="uploads/lekc/6.mp3" download><i class="fa fa-cloud-download"></i></a>
-
-                        &nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;
-                        <a href="uploads/lekc/1.mp3" target="_blank"><i class="fa fa-play-circle-o"></i></a></td></td>
-                </tr>
-                </tbody>
-            </table>
         </div>
     </article>
 </div>
 
 
-<!--<div id="disqus_thread"></div>-->
-<!--<script type="text/javascript">-->
-<!--    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */-->
-<!--    var disqus_shortname = 'ganbaatar'; // required: replace example with your forum shortname-->
-<!---->
-<!--    /* * * DON'T EDIT BELOW THIS LINE * * */-->
-<!--    (function() {-->
-<!--        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;-->
-<!--        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';-->
-<!--        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);-->
-<!--    })();-->
-<!--</script>-->
-<!--<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
-<!--<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>-->
+@stop
 
+@section('footer')
+<div style="height: 40px;"></div>
 @stop

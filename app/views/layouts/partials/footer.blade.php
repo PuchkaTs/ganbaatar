@@ -1,7 +1,7 @@
 <footer class="footer uk-scrollspy-inview"
         data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
     <div class="row uk-scrollspy-inview footer-contact"
-         data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+         data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}" style="margin-right: 0px;">
 
         <!--        <p class="center">{{ App::getLocale() == 'en' ? HTML::image("logo_lg_en.png") : HTML::image("logo_lg_mn.png")}}</p>-->
 

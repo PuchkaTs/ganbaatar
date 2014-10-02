@@ -27,6 +27,7 @@
     @yield('content')
 </div>
 @include('layouts.partials.footer')
+@yield('footer')
 <script src="/js/jquery-1.11.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/js_uikit/uikit.min.js"></script>

@@ -21,7 +21,13 @@ jQuery(document).ready(function($){
 
     $(function(){
         rotateListItem();
-        setInterval("rotateListItem()", 6500);
+        setInterval("rotateListItem()", 10000);
+
+    })
+
+    $(function(){
+        rotateListItemShot();
+        setInterval("rotateListItemShot()", 8000);
 
     })
 
@@ -43,29 +49,32 @@ function rotateListItem(){
 
 
 
-    oCurLi.delay(5500).queue(function(next){
+    oCurLi.delay(9000).queue(function(next){
        $(this).removeClass("current");
         next();
     });
-
-//    function rotateListItem(){
-//
-//        var oCurLi = $("#slideshow li.previous");
-//        oCurLi.removeClass('previous');
-//        var oNxtLi = oCurLi.next();
-//        if (oNxtLi.length == 0)
-//            oNxtLi = $("#slideshow li:first");
-//
-//
-//        oCurLi.addClass('current').delay(5500).queue(function(next){
-//            oNxtLi.addClass('previous');
-//            $(this).removeClass("current");
-//            next();
-//        });
-
-
-
 }
+function rotateListItemShot(){
+
+
+    var oCurLi = $("#slideshowShot li.next");
+    oCurLi.addClass('current').removeClass('next');
+    var oNxtLi = oCurLi.next();
+    oNxtLi.addClass('next');
+    if (oNxtLi.length == 0){
+        oNxtLi = $("#slideshowShot li:first");
+        oNxtLi.addClass('next');
+    }
+
+
+
+    oCurLi.delay(5000).queue(function(next){
+        $(this).removeClass("current");
+        next();
+    });
+}
+
+
 //loop video
 jQuery.event.add(window, "load", resizeFrame);
 jQuery.event.add(window, "resize", resizeFrame);

@@ -38,6 +38,14 @@ textarea.form-control:focus { border-color: #ccc; box-shadow: none; -webkit-box-
 
 #slideshow li.current { opacity: 1; }
 
+ul#slideshowShot { position: relative; overflow: hidden; width: 450px; height: 20px; }
+
+#slideshowShot li { left: 460px; list-style: none; position: absolute; opacity: 0.0; -webkit-transition: 1s; -moz-transition: 1s; -ms-transition: 1s; -o-transition: 1s; transition: 1s; width: 100%; }
+
+#slideshowShot li.next { opacity: 1; left: 460px; }
+
+#slideshowShot li.current { opacity: 1; left: 0px; }
+
 .project { height: 210px; padding: 28px; background-color: #fff; }
 
 .project .text { margin-left: 15px; height: 120px; overflow: hidden; }

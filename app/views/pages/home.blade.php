@@ -80,7 +80,7 @@
              style=" background-color: #ffffff; padding-left: 30px; margin-bottom: 30px; margin-top: 45px">
         <h3><i class="fa fa-music"></i> Аудио лекц сонсох</h3>
 
-        <div class="col-md-12" style="margin-bottom: 30px;">
+        <div class="col-md-12" style="margin-bottom: 30px; padding-left: 0px;">
             <ul class="nav nav-tabs" role="tablist" id="myTab">
                 <li class="active"><a href="#home" role="tab" data-toggle="tab">Лекцүүд</a></li>
                 <li><a href="#download" role="tab" data-toggle="tab">Татах</a></li>
@@ -122,8 +122,4 @@
 </div>
 
 
-@stop
-
-@section('footer')
-<div style="height: 40px;"></div>
 @stop

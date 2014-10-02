@@ -10,13 +10,13 @@
 
     </div>
 </div>
-<div class="row" id="projects" style="min-height: 700px">
+<div class="row" id="projects" style="min-height: 700px; margin-bottom: 50px;">
     <div class="col-md-8 col-lg-6 col-lg-offset-2">
 
         @foreach($projects as $project)
             <div class="col-md-12">
                 <article class="project">
-                    <h3>{{ $project->title }}</h3>
+                    <h4>{{ $project->title }}</h4>
                     @if($project->image->count())
                         {{ HTML::image("uploads/projects/thumbs/" . $project->image->first()->image) }}
                     @else

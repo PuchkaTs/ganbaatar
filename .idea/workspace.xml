@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa6ec0b-c60d-443f-a9aa-a5ce34a95acd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/_project.scss" afterPath="$PROJECT_DIR$/app/assets/sass/_project.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/main.css" afterPath="$PROJECT_DIR$/app/assets/sass/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/news.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/news.blade.php" />
     </list>
     <ignored path="ganbaatar.iws" />
@@ -38,15 +39,6 @@
                 <element signature="n#style#0;n#article#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#article#0;n#div#2;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014_09_09_045233_create_messages_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_09_045233_create_messages_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1176">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,8 +82,10 @@
       <file leaf-file-name="news.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/news.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1344">
-              <folding />
+            <state line="12" column="77" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1344">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +102,16 @@
       <file leaf-file-name="start.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="39" selection-start="947" selection-end="947" vertical-scroll-proportion="0.5635593" vertical-offset="0" max-vertical-offset="1932">
+            <state line="26" column="41" selection-start="905" selection-end="905" vertical-scroll-proportion="0.49326426" vertical-offset="0" max-vertical-offset="1932">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_project.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/_project.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="1" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="1624">
               <folding />
             </state>
           </provider>
@@ -173,7 +176,6 @@
         <option value="$PROJECT_DIR$/app/models/Song.php" />
         <option value="$PROJECT_DIR$/app/config/administrator/songs.php" />
         <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
-        <option value="$PROJECT_DIR$/app/assets/sass/_project.scss" />
         <option value="$PROJECT_DIR$/app/assets/sass/main.scss" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_10_02_081553_create_messages_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_10_02_081553_create_shots_table.php" />
@@ -185,8 +187,9 @@
         <option value="$PROJECT_DIR$/app/assets/sass/_slideshow.scss" />
         <option value="$PROJECT_DIR$/public/js/air.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/pages/news.blade.php" />
         <option value="$PROJECT_DIR$/bootstrap/start.php" />
+        <option value="$PROJECT_DIR$/app/assets/sass/_project.scss" />
+        <option value="$PROJECT_DIR$/app/views/pages/news.blade.php" />
       </list>
     </option>
   </component>
@@ -461,7 +464,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/air-soft" />
+    <property name="last_opened_file_path" value="$USER_HOME$/great-gold" />
     <property name="SearchEverywhereHistory" value="viewcompo" />
     <property name="FullScreen" value="false" />
   </component>
@@ -731,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/_project.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1372">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Song.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="78" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
@@ -856,16 +852,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/_project.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="1" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="1624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/news.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1344">
-          <folding />
+        <state line="12" column="77" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1344">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="39" selection-start="947" selection-end="947" vertical-scroll-proportion="0.5635593" vertical-offset="0" max-vertical-offset="1932">
+        <state line="26" column="41" selection-start="905" selection-end="905" vertical-scroll-proportion="0.49326426" vertical-offset="0" max-vertical-offset="1932">
           <folding />
         </state>
       </provider>

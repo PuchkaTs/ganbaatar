@@ -184,7 +184,8 @@ ul#slideshowShot {
 .project {
   height: 210px;
   padding: 28px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 1; }
 
 .project .text {
   margin-left: 15px;

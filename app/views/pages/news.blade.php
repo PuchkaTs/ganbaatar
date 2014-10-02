@@ -24,7 +24,7 @@
                     @endif
                     <div class="text">
                         <p class="subdate">{{ $project->created_at->diffForHumans() }}</p>
-                        <p>{{ $project->shorten() }} {{ link_to_route('news_path', 'Дэлгэрэнгүй', $project->id, ['class' => 'more'])}}
+                        <p>{{ $project->shorten(200) }} {{ link_to_route('news_path', 'Дэлгэрэнгүй', $project->id, ['class' => 'more'])}}
                         </p>
                     </div>
 

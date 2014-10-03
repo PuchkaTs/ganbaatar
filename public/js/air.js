@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+
+
+
     $('#navslide').scrollspy({
         min: 50,
         max: 1500,
@@ -84,3 +87,14 @@ function resizeFrame()
     var h = $(window).height();
     $(".c_img*").css('height',h);
 }
+
+$(window).load(function() {
+    $('.flexslider2').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 210,
+        itemMargin: 20,
+        minItems: 1,
+        maxItems: 4
+    });
+});

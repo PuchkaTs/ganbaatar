@@ -28,13 +28,9 @@ class PagesController extends \BaseController {
         $tweets = Gtweet::get();
         $videos = Video::wherePin(true)->get();
         $songs = Song::get();
-//        if ($content = Content::whereTag('About us')->first())
-//        {
-//                $body = $content->body;
-//                $header = $content->header;
-//        }
+        $projects = Project::limit(8)->latest()->get();
 
-        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets', 'videos', 'songs'));
+        return View::make('pages.home')->with(compact('body', 'header', 'banners', 'tweets', 'videos', 'songs', 'projects'));
     }
 
     public function video()

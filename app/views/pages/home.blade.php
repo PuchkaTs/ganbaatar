@@ -3,6 +3,7 @@
 @section('css')
 
 <link rel="stylesheet" type="text/css" href="css/hover_css/component.css"/>
+<link rel="stylesheet" type="text/css" href="css/flexslider/flexslider2.css"/>
 <script type="text/javascript" src="//cdn.sublimevideo.net/js/l38se7cr.js"></script>
 @stop
 
@@ -69,11 +70,25 @@
     </article>
 </div>
 
-<div class="container">
-    <div class="grid">
+<div class="container noPadding">
+    <article style="margin-top: 45px;">
+        <h3><i class="fa fa-globe"></i> Мэдээлэл</h3>
+        <div class="flexslider flexslider2">
+            <ul class="slides">
+                @foreach($projects as $project)
+                <li>
+                    <img src="uploads/projects/300x200/{{ $project->image->first() ? $project->image->first()->image : '1.jpg' }}" />
+                    <figcaption>
+                        <h4>{{ $project->title }}</h4>
+                        <div><p>{{ $project->shorten(100)}} {{ link_to_route('news_path', 'Дэлгэрэнгүй', $project->id, ['class' => 'more'])}}</p></div>
+                    </figcaption>
+                </li>
+                @endforeach()
 
+            </ul>
+        </div>
 
-    </div>
+    </article>
 </div>
 <div class="container">
     <article class="row"
@@ -115,7 +130,6 @@
 
                 </div>
             </div>
-
 
         </div>
     </article>

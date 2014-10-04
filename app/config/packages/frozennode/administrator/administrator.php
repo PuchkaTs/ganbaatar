@@ -61,6 +61,7 @@ return array(
         'Медиа'=>['songs', 'videos'],
         'gtweets',
         'shots',
+        'messages',
     ),
 
 	/**

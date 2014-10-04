@@ -65,7 +65,12 @@ class ContactsController extends Controller {
 
         Message::create($input);
 
-        Flash::message('Thank you! Your message has been successfully sent. We will contact you very soon!');
+        Flash::message('Бидэнтэй холбогдож байгаад баярлалаа. Таньд удахгүй хариу мэдэгдье!');
+
+        Mail::send('emails.question', $input, function($message)
+        {
+            $message->to('myagmardorj_b24@yahoo.com ')->subject('Aks Ganbaatar');
+        });
 
         return Redirect::back();
 	}

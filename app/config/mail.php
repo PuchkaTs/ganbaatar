@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'ncst.puje@gmail.com', 'name' => 'Site Forward'),
+	'from' => array('address' => 'marketing@airkreativ.com', 'name' => 'Site msg forward'),
 
 	/*
 	|--------------------------------------------------------------------------

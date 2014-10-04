@@ -69,7 +69,7 @@ class ContactsController extends Controller {
 
         Mail::send('emails.question', $input, function($message)
         {
-            $message->to('myagmardorj_b24@yahoo.com ')->subject('Aks Ganbaatar');
+            $message->to('myagmardorj_b24@yahoo.com ')->subject('Ask Ganbaatar');
         });
 
         return Redirect::back();

@@ -1,11 +1,11 @@
-<div class="quick-access">
+<div class="quick-access" style="position: fixed; z-index: 99;">
     <div class="container">
             @if($shots = Shot::get())
-            <ul id="slideshowShot" class="pull-left">
+            <ul id="slideshowShot" class="pull-left hidden-xs">
                 @foreach($shots as $index => $shot)
                 @if($index == 0)
                 <li class="next">
-                        <p >{{ $shot->message }}
+                        <p>{{ $shot->message }}
                         </p>
                 </li>
                 @else
@@ -19,9 +19,10 @@
             </ul>
 
             @endif()
-        <p class="pull-right"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-soundcloud"></i></a></p>
+        <p class="pull-right icons"><a href="https://www.facebook.com/ganbaatar.ue" target="_blank"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/channel/UC6Evz4NFHhrljMa-64akTiw" target="_blank"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-soundcloud"></i></a></p>
     </div>
 </div>
+<div style="height: 34px;"></div>
 
 <header class="mainheader">
     <nav class="navbar navbar-default role="navigation" >
@@ -45,7 +46,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Бодлого <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             @foreach(Content::get() as $policy)
-                                <li ><a href="/policy/{{$policy->id}}">{{ $policy->header }}</a></li>
+                                <li ><a href="/policy/{{$policy->id}}">{{ $policy->menuTitle }}</a></li>
                             @endforeach()
                         </ul>
                     </li>

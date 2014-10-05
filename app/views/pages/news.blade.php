@@ -33,6 +33,7 @@
 
             </div>
         @endforeach
+        <div> {{ $projects->links() }}</div>
     </div>
 @include('layouts.partials.sidebar')
 

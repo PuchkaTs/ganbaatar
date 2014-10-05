@@ -24,11 +24,13 @@
 ul#slideshowShot{
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 20px;
+  width: 600px;
+  height: 24px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 #slideshowShot li {
-  left: 460px;
+  left: 610px;
   list-style: none;
   position: absolute;
   opacity: 0.0;
@@ -42,7 +44,7 @@ ul#slideshowShot{
 }
 #slideshowShot li.next {
   opacity: 1;
-  left: 460px;
+  left: 610px;
 }
 
 #slideshowShot li.current {

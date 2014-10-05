@@ -71,7 +71,7 @@
 </div>
 
 <div class="container noPadding">
-    <article style="margin-top: 45px;">
+    <article style="margin-top: 45px; margin-left: 20px; margin-right: 20px;">
         <h3><i class="fa fa-globe"></i> Мэдээлэл</h3>
         <div class="flexslider flexslider2">
             <ul class="slides">

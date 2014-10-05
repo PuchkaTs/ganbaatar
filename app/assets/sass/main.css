@@ -15,8 +15,10 @@
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d72c24', endColorstr='#f95700',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+  width: 100%;
   padding: 3px;
   line-height: 28px;
+  height: 35px;
   color: white; }
 
 .quick-access p {
@@ -33,6 +35,11 @@
       background-color: white;
       border-color: white;
       color: #F95700; }
+
+.quick-access .icons {
+  position: absolute;
+  top: 3px;
+  right: 25px; }
 
 .navbar-default .navbar-nav > li > a {
   color: #777;
@@ -158,11 +165,13 @@ textarea.form-control:focus {
 ul#slideshowShot {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 20px; }
+  width: 600px;
+  height: 24px;
+  margin-bottom: 0px;
+  padding-left: 0px; }
 
 #slideshowShot li {
-  left: 460px;
+  left: 610px;
   list-style: none;
   position: absolute;
   opacity: 0.0;
@@ -175,7 +184,7 @@ ul#slideshowShot {
 
 #slideshowShot li.next {
   opacity: 1;
-  left: 460px; }
+  left: 610px; }
 
 #slideshowShot li.current {
   opacity: 1;

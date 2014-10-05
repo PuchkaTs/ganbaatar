@@ -87,7 +87,7 @@ class PagesController extends \BaseController {
      */
     public function show_news()
     {
-        $projects = Project::get();
+        $projects = Project::latest()->paginate(8);
 
         return View::make('pages.news')->with(compact('projects'));
     }

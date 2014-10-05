@@ -1,8 +1,10 @@
-.quick-access { background: #d72c24; /* Old browsers */ background: -moz-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, #d72c24), color-stop(66%, #f17432), color-stop(66%, #ef7b40), color-stop(100%, #f95700)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* IE10+ */ background: linear-gradient(135deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d72c24', endColorstr='#f95700',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ padding: 3px; line-height: 28px; color: white; }
+.quick-access { background: #d72c24; /* Old browsers */ background: -moz-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, #d72c24), color-stop(66%, #f17432), color-stop(66%, #ef7b40), color-stop(100%, #f95700)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* IE10+ */ background: linear-gradient(135deg, #d72c24 53%, #f17432 66%, #ef7b40 66%, #f95700 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d72c24', endColorstr='#f95700',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ width: 100%; padding: 3px; line-height: 28px; height: 35px; color: white; }
 
 .quick-access p { margin: 0; }
 .quick-access p i { border: 1px solid white; width: 24px; height: 24px; text-align: center; padding-top: 5px; margin-left: 7px; color: white; }
 .quick-access p i:hover { background-color: white; border-color: white; color: #F95700; }
+
+.quick-access .icons { position: absolute; top: 3px; right: 25px; }
 
 .navbar-default .navbar-nav > li > a { color: #777; height: 90px; padding: 35px 25px; }
 
@@ -38,11 +40,11 @@ textarea.form-control:focus { border-color: #ccc; box-shadow: none; -webkit-box-
 
 #slideshow li.current { opacity: 1; }
 
-ul#slideshowShot { position: relative; overflow: hidden; width: 450px; height: 20px; }
+ul#slideshowShot { position: relative; overflow: hidden; width: 600px; height: 24px; margin-bottom: 0px; padding-left: 0px; }
 
-#slideshowShot li { left: 460px; list-style: none; position: absolute; opacity: 0.0; -webkit-transition: 1s; -moz-transition: 1s; -ms-transition: 1s; -o-transition: 1s; transition: 1s; width: 100%; }
+#slideshowShot li { left: 610px; list-style: none; position: absolute; opacity: 0.0; -webkit-transition: 1s; -moz-transition: 1s; -ms-transition: 1s; -o-transition: 1s; transition: 1s; width: 100%; }
 
-#slideshowShot li.next { opacity: 1; left: 460px; }
+#slideshowShot li.next { opacity: 1; left: 610px; }
 
 #slideshowShot li.current { opacity: 1; left: 0px; }
 

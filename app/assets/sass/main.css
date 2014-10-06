@@ -268,7 +268,7 @@ body {
     background-color: #F95700; }
 
 .underlined {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding-bottom: 10px;
   border-bottom: 1px solid #d72c24; }
 
@@ -317,5 +317,9 @@ a {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   background-color: #d72c24;
   color: #ffffff; }
+
+.policy {
+  margin-bottom: 50px;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

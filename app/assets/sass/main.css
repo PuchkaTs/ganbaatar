@@ -168,7 +168,8 @@ ul#slideshowShot {
   width: 600px;
   height: 24px;
   margin-bottom: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+  font-size: 0.8em; }
 
 #slideshowShot li {
   left: 610px;

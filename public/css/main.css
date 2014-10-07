@@ -40,7 +40,7 @@ textarea.form-control:focus { border-color: #ccc; box-shadow: none; -webkit-box-
 
 #slideshow li.current { opacity: 1; }
 
-ul#slideshowShot { position: relative; overflow: hidden; width: 600px; height: 24px; margin-bottom: 0px; padding-left: 0px; }
+ul#slideshowShot { position: relative; overflow: hidden; width: 600px; height: 24px; margin-bottom: 0px; padding-left: 0px; font-size: 0.8em; }
 
 #slideshowShot li { left: 610px; list-style: none; position: absolute; opacity: 0.0; -webkit-transition: 1s; -moz-transition: 1s; -ms-transition: 1s; -o-transition: 1s; transition: 1s; width: 100%; }
 

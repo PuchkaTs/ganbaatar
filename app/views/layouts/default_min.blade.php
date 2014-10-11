@@ -20,6 +20,7 @@
 </head>
 
 <body>
+@include('layouts.partials.google')
 @include('layouts.partials.nav')
 
 <div class="container-fluid">

@@ -3,7 +3,6 @@
 @section('css')
 
 <link rel="stylesheet" type="text/css" href="css/hover_css/component.css"/>
-<script type="text/javascript" src="//cdn.sublimevideo.net/js/l38se7cr.js"></script>
 @stop
 
 @section('content')
@@ -18,9 +17,9 @@
 
         <div class="col-md-12 noPadding">
             <div class="thumbnail">
-
-                <video id="{{ $video->video }}" class="sublime" width="360" height="200" title="Оюу Толгойн луйвар" data-uid="{{ $video->video }}" data-youtube-id="{{ $video->video }}" data-autoresize="fit" preload="none">
-                </video>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{$video->video . "?rel=0&amp;showinfo=0"}}" allowfullscreen></iframe>
+                    </div>
                 <div class="caption">
                     <h3>{{ $video->title }}</h3>
                     <p>{{ $video->description }}</p>
